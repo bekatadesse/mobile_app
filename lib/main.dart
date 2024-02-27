@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 void main() => runApp(MaterialApp(
   home: Home()));
 
-
+ 
 class Home extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
@@ -14,18 +14,21 @@ class Home extends StatelessWidget {
         backgroundColor: Colors.greenAccent,
       ),
       body: const Center(
-        child: Text(
-            'This is home page',
-            style: TextStyle(
-              fontSize: 20.0,
-              fontWeight: FontWeight.bold,
-              letterSpacing: 2.0,
-              color: Colors.grey,
-              fontFamily: 'Quicksand',
-
-            )
+        child: Image(
+          image: AssetImage('assets/pic-2.jpg'),
+      )
+         // child: Image(image: NetworkImage('https://images.pexels.com/photos/20061968/pexels-photo-20061968/free-photo-of-young-woman-with-freckles-posing-with-peaches.jpeg?auto=compress&cs=tinysrgb&w=400&lazy=load')),
+        // Text(
+        //     'This is home page',
+        //     style: TextStyle(
+        //       fontSize: 20.0,
+        //       fontWeight: FontWeight.bold,
+        //       letterSpacing: 2.0,
+        //       color: Colors.grey,
+        //       fontFamily: 'Quicksand',
+        //
+        //     )
         ),
-      ),
       floatingActionButton: const FloatingActionButton(
         onPressed: null,
         child: Text('click me mmm'),
